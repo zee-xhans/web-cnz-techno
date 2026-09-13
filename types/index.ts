@@ -89,15 +89,23 @@ export interface FAQItem {
   category?: string;
 }
 
+export interface PricingFeature {
+  title: string;
+  impact: string;
+}
+
 export interface PricingPlan {
   id: string;
+  tierNumber?: string;
   name: string;
   badge?: string;
+  priceNote?: string;
   description: string;
   monthlyPrice: string;
-  annualPrice: string;
+  annualPrice?: string;
+  price?: string;
   popular?: boolean;
-  features: string[];
+  features: (string | PricingFeature)[];
   ctaText: string;
 }
 
