@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { Globe, Mail, ArrowRight, Check } from "lucide-react";
+import { Logo } from "@/components/common/Logo";
 
 export function Footer() {
   const [email, setEmail] = useState("");
@@ -22,8 +23,8 @@ export function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 px-6 md:px-16 max-w-[1440px] mx-auto relative z-10">
         {/* Brand Column */}
         <div className="col-span-1">
-          <div className="text-3xl font-extrabold text-white mb-6 tracking-tighter font-montserrat">
-            CnZ<span className="text-[#c8f300]">.</span>Techno
+          <div className="mb-6">
+            <Logo size="lg" />
           </div>
           <p className="text-[#c5c9ac] opacity-80 mb-8 max-w-xs leading-relaxed text-base font-poppins">
             Meningkatkan daya saing brand melalui rekayasa software berkinerja tinggi dan sistem desain modern.

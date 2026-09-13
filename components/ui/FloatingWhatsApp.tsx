@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { MessageCircle, X, Send } from "lucide-react";
 
 export function FloatingWhatsApp() {
@@ -24,8 +25,14 @@ export function FloatingWhatsApp() {
         <div className="mb-4 w-80 sm:w-96 bg-[#181c1e] border border-white/10 rounded-2xl p-5 shadow-2xl backdrop-blur-2xl animate-in slide-in-from-bottom-5 duration-300">
           <div className="flex justify-between items-center pb-3 border-b border-white/10">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-[#c8f300] text-[#171e00] flex items-center justify-center font-bold">
-                CnZ
+              <div className="w-10 h-10 rounded-full bg-[#101415] border border-[#c8f300]/40 flex items-center justify-center p-1.5 shadow-md shadow-black/40 relative overflow-hidden">
+                <Image
+                  src="/logo-cnz.png"
+                  alt="CnZ Techno Logo"
+                  width={32}
+                  height={32}
+                  className="object-contain w-full h-full"
+                />
               </div>
               <div>
                 <p className="font-bold text-white text-sm">CnZ Product Consultant</p>

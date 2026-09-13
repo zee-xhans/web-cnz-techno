@@ -18,6 +18,8 @@ import {
   Layers,
 } from "lucide-react";
 
+import { Logo } from "@/components/common/Logo";
+
 interface NavbarProps {
   onOpenConsultation?: () => void;
 }
@@ -73,13 +75,7 @@ export function Navbar({ onOpenConsultation }: NavbarProps) {
       }`}
     >
       <nav className="flex justify-between items-center w-full px-6 md:px-16 max-w-[1440px] mx-auto">
-        <Link
-          href="/"
-          className="text-2xl md:text-3xl font-extrabold tracking-tighter text-white relative group font-montserrat"
-        >
-          CnZ<span className="text-[#c8f300]">.</span>Techno
-          <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#c8f300] group-hover:w-full transition-all duration-300"></div>
-        </Link>
+        <Logo size="md" />
 
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center gap-7 text-sm font-medium font-poppins">
@@ -111,10 +107,10 @@ export function Navbar({ onOpenConsultation }: NavbarProps) {
 
                   {/* Dropdown Menu */}
                   {servicesDropdownOpen && (
-                    <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[390px] bg-[#14181b]/98 backdrop-blur-2xl border border-white/15 rounded-2xl p-3.5 shadow-2xl shadow-black/90 animate-in fade-in-0 zoom-in-95 duration-200 z-50">
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[380px] bg-[#14181b]/98 backdrop-blur-2xl border border-white/15 rounded-2xl p-3.5 shadow-2xl shadow-black/90 animate-in fade-in-0 zoom-in-95 duration-200 z-50">
                       <div className="px-3 py-2 border-b border-white/10 mb-2 flex items-center justify-between">
-                        <span className="text-xs uppercase tracking-wider text-[#c8f300] font-bold font-montserrat flex items-center gap-1.5">
-                          <Sparkles className="w-3.5 h-3.5" /> Solusi Skala Bisnis
+                        <span className="text-xs uppercase tracking-wider text-[#c8f300] font-bold font-montserrat">
+                          Solusi Bisnis
                         </span>
                         <span className="text-[11px] text-[#8e9193] font-poppins">Pilih Layanan</span>
                       </div>
@@ -132,10 +128,10 @@ export function Navbar({ onOpenConsultation }: NavbarProps) {
                             </div>
                             <div>
                               <div className="text-sm font-semibold text-white group-hover/item:text-[#c8f300] transition-colors font-montserrat flex items-center gap-1.5">
-                                {svc.title}
+                                {svc.shortTitle || svc.title}
                               </div>
                               <div className="text-xs text-[#8e9193] line-clamp-1 mt-0.5 font-poppins">
-                                {svc.subtitle || svc.shortDesc}
+                                {svc.navDesc || svc.subtitle || svc.shortDesc}
                               </div>
                             </div>
                           </Link>
@@ -221,7 +217,7 @@ export function Navbar({ onOpenConsultation }: NavbarProps) {
                           className="flex items-center gap-2.5 py-2 text-sm text-[#e0e3e5] hover:text-[#c8f300] font-poppins"
                         >
                           <div className="p-1.5 rounded-lg bg-white/5">{getServiceIcon(svc.slug)}</div>
-                          <span className="font-medium">{svc.title}</span>
+                          <span className="font-medium">{svc.shortTitle || svc.title}</span>
                         </Link>
                       ))}
                     </div>

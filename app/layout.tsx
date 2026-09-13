@@ -34,12 +34,25 @@ export const metadata: Metadata = {
     "SEO Teknis",
   ],
   authors: [{ name: "CnZ Techno" }],
+  icons: {
+    icon: "/logo-square.png",
+    shortcut: "/logo-square.png",
+    apple: "/logo-square.png",
+  },
   openGraph: {
     title: "CnZ Techno | Bangun Produk Digital Skalabel & Modern",
     description:
       "Presisi engineering dengan jiwa kreatif. Solusi web dan produk digital siap berkembang.",
     type: "website",
     locale: "id_ID",
+    images: [
+      {
+        url: "/logo.png",
+        width: 512,
+        height: 512,
+        alt: "CnZ Techno",
+      },
+    ],
   },
 };
 

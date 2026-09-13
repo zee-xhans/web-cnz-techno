@@ -15,6 +15,8 @@ export interface ServiceItem {
   id: string;
   slug: string;
   title: string;
+  shortTitle?: string;
+  navDesc?: string;
   subtitle?: string;
   shortDesc: string;
   description: string;
