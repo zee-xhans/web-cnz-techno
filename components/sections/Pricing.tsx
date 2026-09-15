@@ -22,13 +22,13 @@ export function Pricing({ onSelectPlan }: PricingProps) {
         {/* Header */}
         <div className="text-center mb-16 reveal-on-scroll max-w-3xl mx-auto">
           <div className="mb-4">
-            <SectionBadge>Investasi Transparan</SectionBadge>
+            <SectionBadge pulse>Investasi Transparan & Hasil Terukur</SectionBadge>
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-white tracking-tight font-montserrat">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 text-white tracking-tight font-montserrat">
             Paket & <span className="text-[#c8f300] italic font-semibold">Investasi</span> Skalabel
           </h2>
           <p className="text-lg md:text-xl text-[#c5c9ac] leading-relaxed mb-6 font-poppins">
-            Pilihan paket transparan berbasis hasil nyata untuk mempercepat peluncuran dan pertumbuhan bisnis online Anda.
+            Pilihan paket transparan berbasis hasil nyata untuk mempercepat peluncuran dan ekspansi produk digital bisnis Anda.
           </p>
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1d2022] border border-white/10 text-xs text-[#c8f300] font-montserrat font-semibold shadow-inner">
             <ShieldCheck className="w-4 h-4 text-[#c8f300]" />
@@ -36,20 +36,20 @@ export function Pricing({ onSelectPlan }: PricingProps) {
           </div>
         </div>
 
-        {/* Pricing Cards Grid (4 Columns) */}
+        {/* Pricing Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 items-stretch">
           {pricingPlans.map((plan, idx) => (
             <GlassCard
               key={plan.id}
-              className={`p-6 sm:p-8 flex flex-col justify-between relative reveal-on-scroll transition-all duration-500 rounded-3xl ${
+              className={`p-6 sm:p-8 flex flex-col justify-between relative reveal-on-scroll transition-all duration-500 rounded-3xl card-spotlight ${
                 plan.popular
-                  ? "border-[#c8f300] shadow-[0_15px_50px_rgba(200,243,0,0.18)] xl:-translate-y-4 bg-gradient-to-b from-[#c8f300]/[0.08] via-white/[0.04] to-transparent ring-1 ring-[#c8f300]/40"
-                  : "border-white/10 hover:border-white/25 hover:-translate-y-1"
+                  ? "border-[#c8f300] shadow-[0_15px_50px_rgba(200,243,0,0.2)] xl:-translate-y-4 bg-gradient-to-b from-[#c8f300]/[0.08] via-white/[0.04] to-transparent ring-1 ring-[#c8f300]/40"
+                  : "border-white/10 hover:border-white/30 hover:-translate-y-2 hover:shadow-2xl"
               }`}
-              style={{ transitionDelay: `${idx * 120}ms` }}
+              style={{ transitionDelay: `${idx * 100}ms` }}
             >
               {plan.popular && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#c8f300] text-[#171e00] text-xs uppercase tracking-widest font-extrabold px-4 py-1.5 rounded-full shadow-lg flex items-center gap-1.5 font-montserrat whitespace-nowrap z-20">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#c8f300] text-[#171e00] text-xs uppercase tracking-widest font-black px-4 py-1.5 rounded-full shadow-lg flex items-center gap-1.5 font-montserrat whitespace-nowrap z-20 badge-shimmer">
                   <Sparkles className="w-3.5 h-3.5 fill-[#171e00]" />
                   {plan.badge}
                 </div>
@@ -73,8 +73,8 @@ export function Pricing({ onSelectPlan }: PricingProps) {
                 <h3 className="text-2xl font-black text-white mb-2 font-montserrat tracking-tight">
                   {plan.name}
                 </h3>
-                
-                <p className="text-[#c5c9ac] text-xs sm:text-sm mb-6 min-h-[52px] font-poppins leading-relaxed">
+
+                <p className="text-[#c5c9ac] text-xs sm:text-sm mb-6 min-h-[50px] font-poppins leading-relaxed">
                   {plan.description}
                 </p>
 
@@ -94,7 +94,7 @@ export function Pricing({ onSelectPlan }: PricingProps) {
                 {/* Features & Impact List */}
                 <div className="mb-8">
                   <div className="text-xs uppercase tracking-wider text-[#8e9193] font-bold mb-3.5 font-montserrat">
-                    Fitur & Dampak:
+                    Fitur & Nilai Tambah:
                   </div>
                   <ul className="space-y-4">
                     {plan.features.map((feature, fIdx) => {
@@ -137,7 +137,7 @@ export function Pricing({ onSelectPlan }: PricingProps) {
                   onClick={() => onSelectPlan?.(plan.name)}
                   variant={plan.popular ? "primary" : "glass"}
                   size="md"
-                  className={`w-full text-sm sm:text-base font-montserrat font-bold ${
+                  className={`w-full text-sm sm:text-base font-montserrat font-bold hover:scale-102 transition-all ${
                     plan.popular ? "shadow-[0_0_25px_rgba(200,243,0,0.35)]" : ""
                   }`}
                 >
@@ -149,7 +149,7 @@ export function Pricing({ onSelectPlan }: PricingProps) {
         </div>
 
         {/* Client Trust Proof Bar with Stacked Avatars */}
-        <div className="mt-16 p-6 rounded-2xl bg-[#14181b]/80 border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-6 max-w-4xl mx-auto backdrop-blur-md reveal-on-scroll">
+        <div className="mt-16 p-6 rounded-2xl bg-[#14181b]/90 border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-6 max-w-4xl mx-auto backdrop-blur-md reveal-on-scroll">
           <div className="flex items-center gap-4">
             <div className="flex -space-x-3 overflow-hidden">
               <img
@@ -175,7 +175,7 @@ export function Pricing({ onSelectPlan }: PricingProps) {
             </div>
             <div>
               <div className="text-sm font-bold text-white font-montserrat">
-                Dipercaya 150+ UMKM, Founder & Enterprise
+                Dipercaya 150+ Bisnis, Founder & Perusahaan
               </div>
               <div className="text-xs text-[#8e9193] font-poppins">
                 Garansi 100% Hak Milik Penuh & Tanpa Biaya Tersembunyi
@@ -184,11 +184,13 @@ export function Pricing({ onSelectPlan }: PricingProps) {
           </div>
 
           <div className="flex items-center gap-2 text-xs font-bold text-[#c8f300] font-montserrat px-3.5 py-1.5 rounded-full bg-[#c8f300]/10 border border-[#c8f300]/20 shrink-0">
-            <Sparkles className="w-3.5 h-3.5" /> Setup Kilat & Dukungan Prioritas
+            <Sparkles className="w-3.5 h-3.5" /> Setup Cepat & Dukungan Prioritas
           </div>
         </div>
       </div>
     </section>
   );
 }
+
+
 

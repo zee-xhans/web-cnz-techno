@@ -23,19 +23,21 @@ export function ProjectModal({ isOpen, onClose }: ProjectModalProps) {
   if (!isOpen) return null;
 
   const serviceOptions = [
-    "Full-Stack Web App",
-    "UI/UX Design & Prototyping",
-    "Mobile App (iOS/Android)",
-    "Technical SEO & Scale",
-    "SaaS / MVP Development",
+    "Portal Klien / SaaS B2B Enterprise",
+    "E-Commerce & Toko Online B2C",
+    "Aplikasi Mobile (iOS & Android)",
+    "Desain UI/UX & Optimasi Konversi",
+    "Technical SEO & Pertumbuhan Organik",
+    "Otomasi Workflow & Integrasi API",
   ];
 
   const budgetOptions = [
-    "< Rp 15jt",
-    "Rp 15jt - 30jt",
-    "Rp 30jt - 60jt",
-    "Rp > 60jt (Enterprise)",
+    "< Rp 5jt (Paket Starter/Essential)",
+    "Rp 5jt - 15jt (Paket Growth/Toko)",
+    "Rp 15jt - 35jt (Aplikasi/Sistem)",
+    "Rp > 35jt (Enterprise Kustom)",
   ];
+
 
   const toggleService = (svc: string) => {
     if (services.includes(svc)) {

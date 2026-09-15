@@ -14,6 +14,7 @@ export const navItems: NavItem[] = [
   { label: "Beranda", href: "/" },
   { label: "Layanan", href: "#services" },
   { label: "Portofolio", href: "/portfolio" },
+  { label: "Harga", href: "#pricing" },
   { label: "Blog", href: "/blog" },
 ];
 
@@ -29,26 +30,28 @@ export const brandPartners = [
 
 export const heroStats: StatItem[] = [
   {
-    value: "98%",
-    label: "Tingkat Retensi Klien",
-    description: "Kemitraan jangka panjang dengan hasil konsisten",
+    value: "99.9%",
+    label: "Keandalan Sistem & Skalabilitas",
+    description: "Infrastruktur tangguh dengan jaminan uptime tinggi",
+  },
+  {
+    value: "+300%",
+    label: "Peningkatan Konversi & Interaksi",
+    description: "Alur transaksi instan tanpa friksi untuk pengguna",
   },
   {
     value: "150+",
-    label: "Produk Sukses Rilis",
-    description: "Web app, mobile apps & portal enterprise",
+    label: "Produk Digital Sukses Rilis",
+    description: "Portal perusahaan, SaaS, e-commerce & aplikasi mobile",
   },
   {
-    value: "4.9/5",
-    label: "Kepuasan Pelanggan",
-    description: "Ulasan terverifikasi dari founder & perusahaan",
-  },
-  {
-    value: "10x",
-    label: "Akselerasi Rilis",
-    description: "Siklus sprint gesit dengan teknologi modern",
+    value: "< 0.8s",
+    label: "Kecepatan Muat Halaman",
+    description: "Performa secepat kilat sesuai standar Core Web Vitals",
   },
 ];
+
+
 
 export const servicesData: ServiceItem[] = [
   {
@@ -687,35 +690,54 @@ export const reviewData = testimonialsList[0];
 export const faqData: FAQItem[] = [
   {
     id: "faq-1",
-    question: "Apa keunggulan CnZ Techno dibanding software house konvensional?",
+    question: "Apakah CnZ Techno melayani konsultasi langsung (on-site) di area Jakarta dan Tangerang?",
     answer:
-      "Kami menggabungkan estetika desain kelas dunia (modern minimalism & mikro-interaksi) dengan standar engineering tinggi (clean architecture Next.js, performa super cepat, dan keamanan solid). Kami membangun produk yang skalabel jangka panjang, bukan sekadar website biasa.",
+      "Ya, tim konsultan dan engineer CnZ Techno berbasis di Jabodetabek dan siap mengadakan sesi konsultasi tatap muka (on-site meeting) maupun hybrid di seluruh area Jakarta (Jakarta Selatan, Pusat, Barat, Utara, Timur) dan Tangerang (BSD City, Gading Serpong, Alam Sutera, Bintaro, Karawaci). Kami juga melayani klien dari seluruh Indonesia secara daring.",
   },
   {
     id: "faq-2",
-    question: "Berapa lama estimasi waktu pengerjaan project?",
+    question: "Apakah CnZ Techno melayani bisnis model B2B maupun B2C?",
     answer:
-      "Untuk landing page atau MVP umumnya memakan waktu 2–4 minggu. Sedangkan untuk web aplikasi kustom atau sistem SaaS skala penuh berkisar antara 6–12 minggu dengan siklus sprint mingguan dan sesi demo berkala.",
+      "Ya! Kami memiliki metodologi rekayasa khusus untuk keduanya: untuk B2B kami fokus pada arsitektur scalable, portal self-service, keamanan data tingkat bank, dan otomatisasi alur kerja. Sedangkan untuk B2C kami fokus pada kecepatan loading <1 detik, konversi checkout tanpa friksi, program loyalitas, dan retensi repeat order pelanggan.",
   },
   {
     id: "faq-3",
-    question: "Apakah CnZ melayani model kerjasama tim dedicated atau retainer?",
+    question: "Apa keunggulan CnZ Techno dibanding software house lain di Jakarta & Tangerang?",
     answer:
-      "Tentu saja! Kami menyediakan skema Dedicated Sprint & Retainer bulanan bagi perusahaan yang membutuhkan tim produk eksternal berkelanjutan tanpa repot merekrut tim in-house.",
+      "Kami tidak memakai template kaku atau plugin berat yang lambat. Kami membangun software berbasis clean code (Next.js 16, React 19, TypeScript) dengan estetika desain kelas dunia, jaminan kecepatan < 0.8 detik, standar SLA reliabilitas 99.9%, dan garansi 100% Hak Milik Source Code (Full IP Ownership).",
   },
   {
     id: "faq-4",
-    question: "Bagaimana dengan hak cipta dan kepemilikan source code?",
+    question: "Berapa biaya pembuatan website atau aplikasi mobile di CnZ Techno?",
     answer:
-      "100% source code, aset desain Figma, dan basis data sepenuhnya menjadi hak milik Anda (Full IP Ownership) setelah proses serah terima project selesai.",
+      "Paket kami sangat transparan dan fleksibel: mulai dari Paket Starter (Rp 540.000) untuk landing page siap pakai, Essential (Rp 890.000) untuk profil bisnis 3 halaman & email resmi, Growth (Rp 1.490.000) untuk sistem pemesanan otomatis 24/7 hingga 7 halaman, hingga Paket Enterprise kustom (Mulai Rp 2.940.000) untuk portal B2B dan sistem berskala besar.",
   },
   {
     id: "faq-5",
-    question: "Teknologi apa saja yang menjadi keahlian utama CnZ Techno?",
+    question: "Bagaimana sistem menangani lonjakan transaksi promo besar pada bisnis B2C?",
     answer:
-      "Kami berfokus pada teknologi mutakhir: Next.js (App Router), React, TypeScript, Tailwind CSS, Node.js, Python, PostgreSQL/Supabase, Redis, Flutter/React Native, serta infrastruktur cloud Vercel, AWS, dan Google Cloud.",
+      "Infrastruktur web dan API yang kami bangun dilengkapi dengan edge caching, CDN global, dan auto-scaling cloud. Sistem Anda diuji beban (load test) untuk tetap stabil dan mulus meski diserbu puluhan ribu pembeli serentak.",
+  },
+  {
+    id: "faq-6",
+    question: "Bagaimana keamanan data dan kepemilikan source code untuk korporat B2B?",
+    answer:
+      "Keamanan adalah prioritas mutlak. Kami menerapkan enkripsi end-to-end, role-based access control (RBAC), audit kerentanan, dan menyerahkan 100% repository GitHub/GitLab beserta dokumentasi arsitektur resmi kepada tim Anda tanpa royalti tersembunyi.",
+  },
+  {
+    id: "faq-7",
+    question: "Berapa lama estimasi waktu pengerjaan project?",
+    answer:
+      "Untuk landing page atau MVP umumnya memakan waktu 1–3 minggu. Sedangkan untuk platform web kustom, sistem e-commerce terintegrasi, atau portal B2B enterprise berkisar antara 4–8 minggu dengan siklus sprint mingguan dan sesi demo berkala.",
+  },
+  {
+    id: "faq-8",
+    question: "Apakah CnZ melayani model kerjasama tim dedicated atau retainer?",
+    answer:
+      "Tentu saja! Kami menyediakan skema Dedicated Sprint & Retainer bulanan bagi perusahaan di Jakarta, Tangerang, dan sekitarnya yang membutuhkan tim produk eksternal berkelanjutan tanpa repot merekrut tim in-house.",
   },
 ];
+
 
 export const blogCategories = [
   { id: "all", label: "Semua Artikel" },

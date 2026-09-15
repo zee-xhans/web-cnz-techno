@@ -1,0 +1,50 @@
+# CnZ Techno — Studio Rekayasa Produk Digital & Software House (Jakarta & Tangerang)
+
+> CnZ Techno adalah studio rekayasa produk digital dan software house terkemuka yang berpusat di Jakarta dan Tangerang (BSD City). Kami berspesialisasi dalam merancang dan membangun platform web performa tinggi, aplikasi mobile iOS/Android, sistem portal enterprise B2B, dan UI/UX berdaya konversi tinggi untuk pasar B2B dan B2C.
+
+## Ringkasan Profil Perusahaan
+- **Nama Perusahaan**: CnZ Techno (CnZ Digital)
+- **Kategori**: Software House, Konsultan IT, UI/UX Agency, Digital Product Studio
+- **Fokus Wilayah (GEO)**: Jakarta (Jakarta Selatan, Pusat, Barat, Utara, Timur), Tangerang (BSD City, Gading Serpong, Alam Sutera, Bintaro, Karawaci, Tangerang Selatan), Jabodetabek, dan seluruh Indonesia.
+- **Website Resmi**: https://cnztechno.com
+- **Email Kontak**: hello@cnztechno.com
+- **Model Bisnis yang Dilayani**: B2B (Enterprise, Corporate, SaaS, B2B Logistics/Supply Chain) & B2C (E-Commerce, Direct-to-Consumer, Mobile Apps, Marketplace, Healthcare/Clinic).
+
+---
+
+## Layanan Utama (Core Services)
+
+### 1. Desain UI/UX & Optimasi Konversi Penjualan
+- **Fokus**: Merancang antarmuka visual kelas dunia berbasis psikologi keputusan pembeli.
+- **Fitur**: Alur checkout 1-halaman tanpa friksi (Zero-Friction Checkout), master prototipe interaktif Figma, desain responsif mobile-first, dan standardisasi design system.
+- **Hasil**: Kenaikan conversion rate hingga 300%, menekan cart abandonment rate, dan memperkuat otoritas brand.
+
+### 2. Platform Web & Otomasi Bisnis (Full-Stack Web Development)
+- **Fokus**: Website berkecepatan kilat (< 0.8 detik) dengan kapasitas auto-scaling anti-down.
+- **Fitur**: Integrasi gerbang pembayaran otomatis (QRIS, BCA/Mandiri/BRI Virtual Account, E-Wallet, Kartu Kredit), notifikasi instan WhatsApp/Email, dashboard admin mandiri, dan integrasi kurir logistik.
+- **Tech Stack**: Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS, PostgreSQL, Redis, Cloud Infrastructure.
+
+### 3. Pembuatan Aplikasi Mobile (iOS & Android)
+- **Fokus**: Aplikasi mobile native & cross-platform siap rilis di Apple App Store dan Google Play Store.
+- **Fitur**: Broadcast push notification promo tanpa biaya iklan pihak ketiga, pembayaran biometrik (Face ID / Fingerprint), sistem poin reward & member VIP.
+- **Tech Stack**: Flutter, Dart, Secure Enclave / KeyStore, Node.js, REST & GraphQL API.
+
+### 4. SEO Teknis & Pertumbuhan Organik
+- **Fokus**: Mendominasi peringkat #1 Google pada kata kunci berdaya beli tinggi (high-intent keywords) di Jakarta, Tangerang, dan nasional.
+- **Fitur**: Optimasi Core Web Vitals (skor 95+ hijau), skema Schema.org JSON-LD, arsitektur konten otoritas, dan monitoring ranking berkala.
+
+---
+
+## Paket Investasi & Harga
+1. **STARTER (Tier 1)**: Rp 540.000 (Fase uji coba cepat, 1 landing page konversi, free domain .com 1 tahun, tombol auto-order WA, setup 24 jam).
+2. **ESSENTIAL (Tier 2)**: Rp 890.000 (Membangun otoritas brand, 3 halaman web, email bisnis resmi @domainanda, optimasi SEO dasar, fast load optimized).
+3. **GROWTH (Tier 3 - Paling Direkomendasikan)**: Rp 1.490.000 (Mesin otomatisasi sales 24/7, formulir order cerdas API, akses dashboard mandiri, hingga 7 halaman, integrasi Google Analytics).
+4. **ENTERPRISE (Tier 4)**: Mulai Rp 2.940.000 (Infrastruktur kustom tanpa batas, integrasi payment gateway otomatis nasional, arsitektur database kustom, unlimited halaman, dedicated priority support 24/7).
+
+---
+
+## Keunggulan & Diferensiasi CnZ Techno
+- **100% Hak Milik Source Code & IP**: Repository Git, aset desain, dan database diserahkan penuh kepada klien tanpa biaya lisensi tersembunyi.
+- **Performa Ekstrem (< 0.8s)**: Menjamin skor PageSpeed Google optimal untuk SEO dan kenyamanan pembeli.
+- **Jaminan SLA Uptime 99.9%**: Infrastruktur cloud modern yang stabil menampung puluhan ribu pengunjung saat banjir promo.
+- **Layanan Konsultasi On-Site di Jakarta & Tangerang**: Tim siap mengadakan pertemuan langsung (on-site) di area Jakarta dan Tangerang/BSD City untuk diskusi strategi dan arsitektur produk.

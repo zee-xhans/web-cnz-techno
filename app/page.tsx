@@ -42,6 +42,8 @@ export default function Home() {
         <CTA onOpenConsultation={handleOpenConsultation} />
       </main>
 
+
+
       {/* Footer */}
       <Footer />
 

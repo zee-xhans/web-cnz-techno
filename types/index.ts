@@ -128,3 +128,16 @@ export interface BlogPost {
   tags: string[];
   keyTakeaways: string[];
 }
+
+export interface DualFocusItem {
+  id: "b2b" | "b2c";
+  title: string;
+  badge: string;
+  subtitle: string;
+  description: string;
+  points: { title: string; desc: string }[];
+  cta: string;
+  metrics: { value: string; label: string }[];
+}
+
+

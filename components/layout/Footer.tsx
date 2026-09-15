@@ -27,7 +27,7 @@ export function Footer() {
             <Logo size="lg" />
           </div>
           <p className="text-[#c5c9ac] opacity-80 mb-8 max-w-xs leading-relaxed text-base font-poppins">
-            Meningkatkan daya saing brand melalui rekayasa software berkinerja tinggi dan sistem desain modern.
+            Meningkatkan daya saing bisnis melalui rekayasa software berkinerja tinggi (B2B) dan antarmuka berdaya konversi tinggi (B2C).
           </p>
           <div className="flex gap-4">
             <a
@@ -76,8 +76,9 @@ export function Footer() {
           <h4 className="font-bold text-lg text-white mb-6 tracking-tight font-montserrat">Perusahaan</h4>
           <ul className="space-y-4 font-poppins">
             {[
+              { label: "Layanan Spesialis", href: "#services" },
               { label: "Tentang Kami", href: "#about" },
-              { label: "Studi Kasus & Portfolio", href: "#portfolio" },
+              { label: "Studi Kasus & Portofolio", href: "#portfolio" },
               { label: "Harga & Paket", href: "#pricing" },
               { label: "Testimoni Klien", href: "#testimonials" },
               { label: "FAQ", href: "#faq" },
@@ -98,7 +99,7 @@ export function Footer() {
         <div className="col-span-1">
           <h4 className="font-bold text-lg text-white mb-6 tracking-tight font-montserrat">Buletin Insight</h4>
           <p className="text-[#c5c9ac] opacity-80 mb-6 text-base font-poppins">
-            Dapatkan wawasan terbaru seputar skalabilitas produk digital dan desain teknologi.
+            Dapatkan wawasan berkala seputar skalabilitas produk digital, tren UI/UX, dan teknologi modern.
           </p>
           <form onSubmit={handleSubscribe} className="flex gap-3">
             <input
@@ -123,15 +124,35 @@ export function Footer() {
         </div>
       </div>
 
+      {/* Local Geo Service Area Coverage Banner (SEO & GEO Focus) */}
+      <div className="max-w-[1440px] mx-auto px-6 md:px-16 mt-16 pt-8 border-t border-white/10">
+        <div className="p-6 rounded-2xl bg-[#14181b]/80 border border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 backdrop-blur-md">
+          <div>
+            <div className="flex items-center gap-2 text-xs uppercase tracking-wider font-bold text-[#c8f300] font-montserrat mb-1">
+              <span className="inline-block w-2 h-2 rounded-full bg-[#c8f300] animate-pulse"></span>
+              Pusat Layanan &amp; Konsultasi (On-Site &amp; Hybrid)
+            </div>
+            <p className="text-sm text-[#c5c9ac] font-poppins">
+              <strong className="text-white">Jakarta</strong> (Selatan, Pusat, Barat, Utara, Timur) &bull;{" "}
+              <strong className="text-white">Tangerang &amp; Tangsel</strong> (BSD City, Alam Sutera, Gading Serpong, Bintaro, Karawaci) &bull;{" "}
+              <span className="text-[#8e9193]">Jabodetabek &amp; Seluruh Indonesia</span>
+            </p>
+          </div>
+          <div className="text-xs text-[#8e9193] font-poppins shrink-0">
+            Software House &amp; Konsultan Produk Digital Terpercaya
+          </div>
+        </div>
+      </div>
+
       {/* Copyright and Legal */}
-      <div className="max-w-[1440px] mx-auto px-6 md:px-16 mt-20 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-[#c5c9ac] opacity-60 font-poppins">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-16 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-[#c5c9ac] opacity-60 font-poppins">
         <p>© {new Date().getFullYear()} CnZ Techno. Hak cipta dilindungi undang-undang.</p>
         <div className="flex gap-8">
           <Link href="#" className="hover:text-[#c8f300] hover:opacity-100 transition-colors">
             Kebijakan Privasi
           </Link>
           <Link href="#" className="hover:text-[#c8f300] hover:opacity-100 transition-colors">
-            Syarat & Ketentuan
+            Syarat &amp; Ketentuan
           </Link>
         </div>
       </div>

@@ -3,63 +3,65 @@
 import React from "react";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { CountUp } from "@/components/ui/CountUp";
-import { Zap } from "lucide-react";
+import { ShieldCheck, Cpu, ArrowUpRight } from "lucide-react";
 
 export function AboutStats() {
   const statsList = [
     {
-      end: 98,
+      end: 99.9,
+      decimals: 1,
+      suffix: "%",
+      label: "Keandalan Sistem & Uptime",
+      description: "Infrastruktur cloud tangguh tanpa risiko downtime",
+    },
+    {
+      end: 320,
       decimals: 0,
       suffix: "%",
-      label: "Tingkat Retensi Klien",
-      description: "Kemitraan jangka panjang dengan hasil konsisten",
+      label: "Peningkatan Konversi Rata-rata",
+      description: "Optimasi alur transaksi dan retensi pengguna",
     },
     {
       end: 150,
       decimals: 0,
       suffix: "+",
-      label: "Produk Sukses Rilis",
-      description: "Web app, mobile apps & portal enterprise",
+      label: "Produk Sukses Diluncurkan",
+      description: "Portal enterprise, e-commerce, & aplikasi mobile",
     },
     {
-      end: 4.9,
+      end: 0.8,
       decimals: 1,
-      suffix: "/5",
-      label: "Kepuasan Pelanggan",
-      description: "Ulasan terverifikasi dari founder & perusahaan",
-    },
-    {
-      end: 10,
-      decimals: 0,
-      suffix: "x",
-      label: "Akselerasi Rilis",
-      description: "Siklus sprint gesit dengan teknologi modern",
+      suffix: "s",
+      label: "Kecepatan Muat Ekstrem",
+      description: "Lolos uji Google Core Web Vitals hijau sempurna",
     },
   ];
 
   return (
     <section id="about" className="py-28 bg-[#0b0f10] relative overflow-hidden">
-      {/* Secondary Glow */}
-      <div className="glow-bg-secondary top-1/2 -right-1/4"></div>
+      {/* Secondary Ambient Glow */}
+      <div className="glow-bg-secondary top-1/2 -right-1/4 opacity-30"></div>
 
       <div className="max-w-[1440px] mx-auto px-6 md:px-16 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center relative z-10">
         {/* Left Column Text */}
         <div className="reveal-on-scroll">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-8 leading-tight text-white font-montserrat">
-            Presisi <span className="text-[#c8f300] italic font-semibold">Engineering</span> dengan
-            Jiwa Kreatif
+          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#c8f300] bg-[#1d2022] px-3.5 py-1.5 rounded-full border border-white/10 mb-6 font-montserrat">
+            <Cpu className="w-4 h-4" /> Filosofi Rekayasa Produk
+          </div>
+
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-8 leading-tight text-white font-montserrat">
+            Presisi <span className="text-[#c8f300] italic font-semibold">Engineering</span> dengan{" "}
+            <span className="text-gradient-purple italic font-semibold">Jiwa Kreatif</span>
           </h2>
 
-          <p className="text-lg md:text-xl text-[#c5c9ac] mb-12 leading-relaxed font-poppins">
-            CnZ Techno adalah studio kreatif dan konsultan teknologi yang membantu bisnis
-            merancang, mengembangkan, dan memperluas skala produk digital modern. Kami tidak sekadar
-            mengikuti tren; kami menetapkan standar pengalaman digital visioner.
+          <p className="text-lg md:text-xl text-[#c5c9ac] mb-10 leading-relaxed font-poppins">
+            CnZ Techno adalah studio rekayasa produk digital dan konsultan teknologi. Kami membantu bisnis merancang, membangun, dan memperluas skala produk modern—mulai dari sistem enterprise yang kompleks dan otomatis hingga platform konsumen yang memikat dengan alur transaksi instan.
           </p>
 
-          <div className="grid grid-cols-2 gap-8 md:gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 pt-4 border-t border-white/10">
             {statsList.map((stat) => (
-              <div key={stat.label} className="group">
-                <div className="text-5xl md:text-6xl text-[#c8f300] font-extrabold mb-2 tracking-tighter font-montserrat">
+              <div key={stat.label} className="group p-4 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-[#c8f300]/30 transition-all">
+                <div className="text-4xl md:text-5xl text-[#c8f300] font-black mb-1.5 tracking-tighter font-montserrat">
                   <CountUp
                     end={stat.end}
                     decimals={stat.decimals}
@@ -67,9 +69,12 @@ export function AboutStats() {
                     duration={2200}
                   />
                 </div>
-                <div className="text-xs md:text-sm text-[#c5c9ac] uppercase tracking-widest font-bold font-montserrat group-hover:text-white transition-colors">
+                <div className="text-xs text-white uppercase tracking-wider font-bold font-montserrat mb-1">
                   {stat.label}
                 </div>
+                <p className="text-xs text-[#8e9193] font-poppins">
+                  {stat.description}
+                </p>
               </div>
             ))}
           </div>
@@ -77,19 +82,26 @@ export function AboutStats() {
 
         {/* Right Column Visual Dashboard */}
         <div className="relative reveal-on-scroll" style={{ transitionDelay: "200ms" }}>
-          <GlassCard className="p-3 border-[#c8f300]/30 overflow-hidden shadow-[0_0_40px_rgba(200,243,0,0.1)]">
+          <GlassCard className="p-3 border-[#c8f300]/30 overflow-hidden shadow-[0_0_50px_rgba(200,243,0,0.12)] group">
             <img
-              alt="Analytics Dashboard"
-              className="w-full rounded-xl object-cover h-[400px] md:h-[500px]"
+              alt="Analytics Dashboard Performance"
+              className="w-full rounded-xl object-cover h-[400px] md:h-[500px] group-hover:scale-102 transition-transform duration-700"
               src="https://lh3.googleusercontent.com/aida/AP1WRLtTi-VZ7-syLhCR1dfJmz2RTi7-MBptK5bNYKvAMOT_ImBHfc0KtiPSvQUeAnmIIFdmQUdLu4a-6Tn5CS8yaWZSD6Gi5nAJcOJ_Qq_ePoNrUvGvLX17gqCus7-Jg5z6zlewfFskoezLZbN6rFC7i-8GIzG78lkkQHpMunaQ3RNfKZxN7zEfvtk8CqJDjEO09ffYfRnpNZNhUv83D-vU5x3DlOuWdhsboRLTFCRb4mllM2oTwrACWeKbTDlH"
             />
           </GlassCard>
 
-          {/* Floating Badge */}
-          <div className="absolute -bottom-8 -left-6 md:-bottom-10 md:-left-10 glass-card p-6 md:p-8 rounded-2xl border-white/20 hidden sm:block max-w-[280px] backdrop-blur-3xl shadow-2xl">
-            <Zap className="w-10 h-10 text-[#c8f300] mb-4" />
-            <p className="text-white text-base md:text-lg font-bold leading-tight font-montserrat">
-              Akselerasi pengembangan MVP Anda dengan presisi tinggi
+          {/* Floating Badge Bottom Left */}
+          <div className="absolute -bottom-8 -left-6 md:-bottom-8 md:-left-8 glass-card p-6 md:p-7 rounded-2xl border-[#c8f300]/30 hidden sm:block max-w-[300px] backdrop-blur-3xl shadow-2xl animate-float">
+            <div className="flex items-center gap-2 mb-3">
+              <div className="p-2 rounded-xl bg-[#c8f300] text-[#171e00]">
+                <ShieldCheck className="w-5 h-5" />
+              </div>
+              <span className="text-xs font-bold text-[#c8f300] uppercase tracking-wider font-montserrat">
+                Keandalan & Kecepatan
+              </span>
+            </div>
+            <p className="text-white text-sm md:text-base font-bold leading-snug font-montserrat">
+              Akselerasi MVP & sistem enterprise tanpa kompromi kualitas
             </p>
           </div>
         </div>
@@ -97,3 +109,5 @@ export function AboutStats() {
     </section>
   );
 }
+
+
